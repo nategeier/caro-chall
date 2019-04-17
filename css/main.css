@@ -1,0 +1,276 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@import "__spacing.css"; /* Using Tachyons spacing */
+
+html,
+body {
+  color: #222;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.15;
+  margin: 0;
+  height: 100%;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * 
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+}
+
+items {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.color-boxes {
+  padding-top: 100px;
+  display: flex;
+
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.color-boxes h3 {
+  padding: 15px;
+}
+
+#left-fund {
+  background-color: #f2c94c;
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+#right-fund {
+  background-color: #83afed;
+  flex-grow: 1;
+}
+
+.black-box h3 {
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px;
+}
+
+myrow {
+  display: flex;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+  align-items: center;
+}
+
+headtext {
+  background-color: #ffffff;
+  font-size: 2rem;
+  padding: 6px;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 60px;
+}
+/* The hero image */
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: url("../img/hero-beach.jpg");
+  height: 480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.hero-image h3 {
+  background-color: #ffffff;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+}
+/*/* Container holding the image and the text */
+.container {
+  text-align: center;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.header__logo {
+  height: 32px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.footer__items a {
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+  Add your CSS hermfsfdsfhsd
+e 
+   ========================================================================== */
+header {
+  text-transform: uppercase;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 300px;
+  border-bottom: 2px solid;
+  padding: 20px;
+}
+bodycontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 960px;
+}
+textcontainer {
+}
+/* myimage {
+  position: absolute;
+  width: 149.6px;
+  height: 97.01px;
+  left: 736.23px;
+  top: 190.89px;
+
+  main {
+    position: absolute;
+    width: 218.92px;
+    height: 24.77px;
+    left: 625.55px;
+    top: 433.53px;
+
+    font-family: arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11.1086px;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+} */
+h3 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+section {
+  display: flex;
+  min-height: 300px;
+  border-bottom: 2px solid;
+  padding: 20px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 13.6623px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: normal;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+p {
+  font-size: 1rem;
+  line-height: normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+/* ========================================================================== ========================================================================== */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
